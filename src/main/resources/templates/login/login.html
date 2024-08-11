@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息管理中心</title>
+    <link rel="icon" type="image/png" href="/images/16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="/images/32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="/images/64.png" sizes="64x64"/>
+    <div th:include="common/css::css"></div>
+</head>
+<body>
+<!-- loader Start -->
+<div id="loading">
+    <div id="loading-center">
+    </div>
+</div>
+<!-- loader END -->
+<!-- Sign in Start -->
+<section class="sign-in-page">
+    <div class="container bg-white mt-5 p-0">
+        <div class="row no-gutters">
+
+            <div class="col-sm-6 text-center">
+                <div class="sign-in-detail text-white">
+                    <a class="sign-in-logo mb-5" href="#"><img src="/images/logo-white.png" class="img-fluid" alt="logo"></a>
+                    <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="0">
+                        <div class="item">
+                            <img th:src="@{/images/login/1.png}" class="img-fluid mb-4" alt="logo">
+                            <h4 class="mb-1 text-white">学校简介</h4>
+                            <p>广东白云学院创建于1989年，是教育部批准成立的全日制普通本科院校。</p>
+                            <p>学校现有两个校区，西校区位于白云区江高镇，北校区位于白云区钟落潭高校园区。</p>
+                        </div>
+                        <div class="item">
+                            <img th:src="@{/images/login/2.png}" class="img-fluid mb-4" alt="logo">
+                            <h4 class="mb-1 text-white">治学理念</h4>
+                            <p>践行“以需求为导向、以学生为中心、以能力为本位、以服务为宗旨”的办学理念</p>
+                            <p>“敦品励学、求是笃行”的校训，发扬“敢为人先、追求卓越”的白云精神，</p>
+                            <p>坚持立德树人，秉承“以学生为中心”的教育教学理念</p>
+                        </div>
+                        <div class="item">
+                            <img th:src="@{/images/login/3.png}" class="img-fluid mb-4" alt="logo">
+                            <h4 class="mb-1 text-white">联系方式</h4>
+                            <p>招生咨询：020-36093333 传真：020-36095259 邮政编码：510450</p>
+                            <p>西校区地址：广州市白云区江高镇学苑路1号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 align-self-center">
+                <div class="sign-in-from">
+                    <h1 class="mb-0">登录</h1>
+                    <p>请输入你的邮箱和密码来登录系统</p>
+                    <p style="color: red" th:text="${str}" th:if="${not #strings.isEmpty(str)}"></p>
+                    <form class="mt-4" method="post" th:action="@{/login}">
+                        <div class="form-group">
+                            <label for="email">邮件地址</label>
+                            <input type="text" class="form-control mb-0" id="email" name="email" placeholder="输入邮件地址">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">密码</label>
+                            <input type="password" class="form-control mb-0" id="password" name="password" placeholder="密码">
+                        </div>
+                        <div class="d-inline-block w-100">
+                            <div class="custom-control custom-checkbox d-inline-block mt-2 pt-1">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">记住我</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary float-right">登录</button>
+                        </div>
+                        <div class="sign-info">
+                            <span class="dark-color d-inline-block line-height-2">没有账号？<a th:href="@{/register}">请注册</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</section>
+<div th:include="common/js::js"></div>
+</body>
+</html>

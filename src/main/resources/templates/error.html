@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息管理中心</title>
+    <link rel="icon" type="image/png" href="/images/16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="/images/32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="/images/64.png" sizes="64x64"/>
+    <style>
+        .animated {
+            opacity: 0;
+        }
+
+        div {
+            margin-left: 200px;
+            padding-left: 150px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.animated').each(function(index, element) {
+                $(element).delay(1000 * index).animate({ opacity: 1, visibility: 'visible' }, 1000);
+            });
+
+            // 自动返回
+            setTimeout(function() {
+                window.location.href = 'add';
+            }, 3000);
+        });
+
+        // 立即返回按钮点击事件
+        $(document).on('click', '#btnGoBack', function() {
+            window.location.href = '/student/list';
+        });
+    </script>
+</head>
+<body>
+<p th:text="${str}"></p>
+<div>
+    <img class="animated" style="float: left;" src="/images/error/02.gif" width="500" height="270">
+    <img class="animated" src="/images/error/01.png" width="351" height="166">
+    <p>您访问的页面莫得了~~</p>
+    <p>如果三秒后未返回原页面请点击下方按钮</p>
+    <!-- 立即返回按钮 -->
+    <button id="btnGoBack">立即返回首页</button>
+
+</div>
+</body>
+</html>

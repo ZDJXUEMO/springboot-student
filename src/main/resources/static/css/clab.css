@@ -1,0 +1,1554 @@
+﻿/* CSS Document */
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0;
+    font-family: "黑体";
+}
+
+var {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+i, em {
+    font-style: normal;
+}
+
+img {
+    border: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec3_bg.png) center bottom;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.col_w {
+    color: #fff;
+}
+
+.float_l {
+    float: left;
+}
+
+.float_r {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu {
+    position: fixed;
+    right: 5%;
+    top: 200px;
+    list-style-type: none;
+    z-index: 70;
+}
+
+    #menu li {
+        font-size: 14px;
+        height: 23px;
+        margin-top: 16px;
+    }
+
+    #menu a {
+        float: left;
+        text-decoration: none;
+        position: relative;
+        height: 23PX;
+        margin: 5px 0;
+    }
+
+        #menu a .black, #menu a .white {
+            position: absolute;
+            top: 0;
+            right: 0;
+            /*text-align: right*/
+        }
+
+        #menu a .black {
+            width: 3px;
+            height: 23px;
+            background: #fff;
+            overflow: hidden;
+            z-index: 10;
+            transition: 0.5s;
+        }
+
+            #menu a .black p {
+                color: #333;
+                height: 23px;
+                position: absolute;
+                right: 12px;
+                transition: 0.5s;
+            }
+
+        #menu a .box {
+            width: 6px;
+            height: 6px;
+            right: 4px;
+            position: absolute;
+            top: 0;
+            background: #fff;
+        }
+
+        #menu a .white {
+            color: #FFF;
+            z-index: 8;
+            margin-right: 12px;
+            width: 60px;
+            text-align: right;
+        }
+
+    #menu .active a .black {
+        width: 50px;
+        height: 23px;
+        right: 12px;
+    }
+
+        #menu .active a .black p {
+            right: 0;
+        }
+
+    #menu .menu_btn {
+        transform: translate(-100%);
+        margin-bottom: 10px;
+        display: block;
+        height: auto;
+    }
+
+.section {
+    overflow: hidden;
+}
+
+#sec1 {
+    background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec1_bg.png) center top;
+    position: relative;
+    background-size: 100%;
+    padding-top: 1px;
+    width: 100%;
+    z-index: 100;
+}
+
+    #sec1 .sec1_bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    #sec1 .sec1_rgb {
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    #sec1 .sec1_bg video {
+        height: 100%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 5;
+    }
+
+    #sec1 .sec1_p {
+        position: absolute;
+        left: 50%;
+        margin-left: -900px;
+        z-index: 90;
+    }
+
+    #sec1 .sec1_tit {
+        position: relative;
+        margin-top: 5%;
+        left: 50%;
+        margin-left: -680px;
+        z-index: 110;
+        display: inline-block;
+    }
+
+        #sec1 .sec1_tit img {
+            display: block;
+            float: left;
+        }
+
+            #sec1 .sec1_tit img.X {
+                width: 50px;
+                margin-top: 40px;
+            }
+
+            #sec1 .sec1_tit img.logo {
+                width: 300px;
+                margin-top: 25px;
+            }
+
+    #sec1 .sec1_b {
+        display: block;
+        position: relative;
+        z-index: 115;
+        left: 50%;
+        margin-left: -490px;
+        margin-top: -30px;
+    }
+
+    #sec1 .sec1_pv {
+        width: 271px;
+        height: 152px;
+        background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec1_pv_bg.png);
+        position: relative;
+        left: 50%;
+        margin-left: -670px;
+        margin-top: 0px;
+        z-index: 120;
+        overflow: hidden;
+    }
+
+        #sec1 .sec1_pv a {
+            display: flex;
+            height: 152px;
+            width: 271px;
+            background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec1_pv_bg.png) center center no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 102;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sec1 .sec1_pv video {
+            width: 271px;
+        }
+
+    #sec1 ul {
+        position: relative;
+        height: 255px;
+        margin-left: 25px;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+        #sec1 ul li {
+            width: 237px;
+            height: 76px;
+            margin: 10px 0;
+        }
+
+            #sec1 ul li a {
+                width: 237px;
+                height: 76px;
+                display: block;
+            }
+
+            #sec1 ul li:first-child a {
+                background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/static/img/index/download_iOS.png) center top no-repeat;
+            }
+
+            #sec1 ul li:nth-child(2) a {
+                background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/static/img/index/download_Android.png) center top no-repeat;
+            }
+
+    #sec1 .sec1_t {
+        margin: 10px auto;
+        display: block;
+        position: relative;
+        z-index: 100;
+    }
+
+    #sec1 .sec1_con {
+        width: 1748px;
+        position: relative;
+        left: 50%;
+        margin-left: -700px;
+        z-index: 101;
+    }
+
+    #sec1 .CV_list {
+        transform: scale(0.8);
+        transform-origin: 0% 0%;
+    }
+
+        #sec1 .CV_list img:first-child {
+            margin-top: -40px;
+        }
+
+    #sec1 .sec1_btn .con_ewm {
+        float: left;
+        margin-right: 0;
+        transform: scale(0.8);
+    }
+
+        #sec1 .sec1_btn .con_ewm img {
+            margin: 5px auto;
+            display: block;
+        }
+
+    #sec1 .sec1_btn .con_ewm_l_tit {
+        width: 230px;
+        height: 40px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        padding-top: 1px;
+        position: relative;
+    }
+
+        #sec1 .sec1_btn .con_ewm_l_tit span {
+            width: 216px;
+            display: block;
+            height: 23px;
+            border-left: 4px solid #fff;
+            border-right: 4px solid #fff;
+            margin: 8px auto;
+            background: url(http://static.jd.gameduchy.com/static/img/index/ewm_tit.png) no-repeat center center;
+        }
+
+        #sec1 .sec1_btn .con_ewm_l_tit p {
+            width: 116px;
+            height: 13px;
+            background: url(http://static.jd.gameduchy.com/static/img/index/gameduchy.jpg);
+            position: absolute;
+            top: -7px;
+            left: 100px;
+        }
+
+.con_ewm_l img, .con_ewm_r img {
+    width: 219px;
+    height: 204px;
+}
+
+#sec1 .sec1_btn .con_ewm_r_tit {
+    width: 218px;
+    height: 40px;
+    background: url(http://static.jd.gameduchy.com/static/img/index/download_ewm.png) no-repeat center center #14b9c8;
+    border-radius: 7px;
+    margin: 0 auto;
+}
+
+#sec4 {
+    background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec3_bg.png) center bottom;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 120;
+}
+
+    #sec4 .sec3_tit {
+        width: 1366px;
+        margin: 30px;
+        position: relative;
+        z-index: 120;
+    }
+
+    #sec4 .sec3_bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    #sec4 .sec3_rgb {
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    #sec4 .sec3_bg video {
+        height: 100%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 5;
+    }
+
+    #sec4 p {
+        font-size: 16px;
+        line-height: 40px;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        z-index: 110;
+    }
+
+#sec2 {
+    background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec4_bg1.png) center top;
+    background-size: 100%;
+    position: relative;
+    z-index: 130;
+}
+
+    #sec2 .sec4_p {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: 0px;
+        transform: scale(0.7);
+        transform-origin: 0% 0%;
+    }
+
+    #sec2 .sec4_tit {
+        display: none;
+    }
+
+    #sec2 .news_cen_list {
+        width: 785px;
+        height: 697px;
+        padding: 40px 267px 163px 108px;
+        margin-left: -590px;
+        left: 50%;
+        position: relative;
+        z-index: 100;
+        background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/static/cbl/images/sec4_list_bg_cbl_1.png);
+    }
+
+        #sec2 .news_cen_list .hd ul {
+            height: 99px;
+            width: 753px;
+            padding: 0 16px;
+            background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec4_list_tit.png) right center no-repeat;
+            margin-top: 29px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+            #sec2 .news_cen_list .hd ul li {
+                float: left;
+                margin-right: 55px;
+            }
+
+            #sec2 .news_cen_list .hd ul a {
+                display: block;
+                width: 156px;
+                height: 45px;
+                background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/news_list_tit.png);
+                color: #fff;
+                font-size: 22px;
+                line-height: 40px;
+                text-align: center;
+            }
+
+    #sec2 .news_list .list ul {
+        margin-top: -20;
+    }
+
+        #sec2 .news_list .list ul li {
+            width: 735px;
+            height: 53px;
+            background: #242424;
+            border-radius: 3px;
+            padding: 0px 10px;
+            margin: 0 auto;
+            margin-bottom: 3px;
+        }
+
+            #sec2 .news_list .list ul li a, #sec2 .news_list .list ul li span {
+                font-size: 20px;
+                color: #fff;
+                line-height: 53px;
+                max-width: 590px;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                float: left;
+            }
+
+            #sec2 .news_list .list ul li span {
+                float: right;
+            }
+
+
+
+.news_list_btn {
+    width: 783px;
+    height: 44px;
+    background: #000;
+}
+
+    .news_list_btn a {
+        width: 261px;
+        line-height: 44px;
+        display: block;
+        color: #fff;
+        float: left;
+        text-align: center;
+    }
+
+.news_bg {
+    background: #989eca;
+}
+
+#sec3 {
+    background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec5_bg.png) center bottom;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    z-index: 140;
+}
+
+    #sec3 .tab {
+        position: absolute;
+        right: 100%;
+        margin-right: -200px;
+        z-index: 100;
+        height: 100%;
+        background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec5_line.png) center right no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+@media screen and (min-width:1920px) {
+    #sec3 .tab {
+        right: auto;
+        left: 50%;
+        margin-right: 0;
+        margin-left: -960px;
+    }
+}
+
+#sec3 .file_btn {
+    width: 171px;
+    height: 54px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+    #sec3 .file_btn.on {
+        width: 208px;
+        height: 54px;
+    }
+
+#sec3 .tab .top {
+    background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/static/img/index/sec5_btn.png) right top no-repeat;
+}
+
+#sec3 .tab .down {
+    background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/static/img/index/sec5_btn.png) left top no-repeat;
+}
+
+#sec3 .tab .top.on {
+    background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/static/img/index/sec5_btn.png) right bottom no-repeat;
+}
+
+#sec3 .tab .down.on {
+    background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/static/img/index/sec5_btn.png) left bottom no-repeat;
+}
+
+#sec3 .file_con {
+    width: 1920px;
+    position: relative;
+    height: 100%;
+}
+
+    #sec3 .file_con .mech, #sec3 .file_con .Pilot {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 1920px;
+    }
+
+#sec3 .swiper-container, #sec3 .swiper-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+#sec3 .swiper-slide {
+    opacity: 0;
+    transition: 1s;
+    height: 100%;
+    text-align: center;
+}
+
+#sec3 .file_list .swiper-slide img.swiper-img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#sec3 .swiper-slide-active {
+    opacity: 1;
+    z-index: 1000;
+}
+
+#sec3 .swiper-box {
+    width: 575px;
+    height: 129px;
+    padding: 10px 17.5px;
+    background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec5_list_bg.png) top center no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -305px;
+    z-index: 2;
+}
+
+#sec3 .gallery-thumbs {
+    z-index: 5;
+}
+
+    #sec3 .gallery-thumbs .swiper-wrapper {
+        width: 575px;
+        margin: 0 auto;
+    }
+
+    #sec3 .gallery-thumbs .swiper-slide {
+        width: 115px;
+        height: 129px;
+        opacity: 1;
+        border-radius: 0;
+        background-position: top center;
+        transition: none;
+        cursor: pointer;
+    }
+
+    #sec3 .gallery-thumbs .swiper-slide-thumb-active {
+        background-position: bottom center;
+    }
+
+#sec3 .swiper-box .swiper-button-white {
+    width: 33px;
+    height: 64px;
+    outline: none;
+    z-index: 10;
+    position: absolute;
+    top: 28px;
+    margin: 0;
+}
+
+#sec3 .swiper-box .swiper-button-next {
+    background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec5_arrow.png) right center no-repeat;
+    right: -20px;
+}
+
+#sec3 .swiper-box .swiper-button-prev {
+    background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec5_arrow.png) left center no-repeat;
+    left: -20px;
+}
+
+#sec3 .audio img {
+    cursor: pointer;
+}
+
+#sec3 .audio {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+
+#foot {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec3_bg.png) center bottom;
+    background-size: 100%;
+    z-index: 160;
+    background-attachment: fixed;
+}
+
+    #foot h4 {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    #foot p, #foot a {
+        color: #fff;
+        margin: 0 10px;
+        margin-top: 0.5em;
+        font-size: 12px;
+    }
+
+        #foot a:hover {
+            text-decoration: underline;
+        }
+
+    #foot .swiper-box {
+        width: 1200px;
+        position: relative;
+    }
+
+    #foot .swiper-slide a, #foot .swiper-slide img {
+        width: 100%;
+        display: block;
+    }
+
+    #foot .swiper-box .swiper-button-next {
+        right: -50px;
+    }
+
+    #foot .swiper-box .swiper-button-prev {
+        left: -50px;
+    }
+
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+    #video .video_box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #video .flowplayer {
+        width: 60%;
+        position: fixed;
+        top: 150px;
+        left: 50%;
+        margin-left: -30%;
+        z-index: 1000;
+    }
+
+    #video .video_close {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/video_close.png) no-repeat center;
+        background-size: 100%;
+        position: absolute;
+        z-index: 1100;
+        right: 50%;
+        top: 50%;
+    }
+
+    #video .video_bg {
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
+    }
+
+    #video video {
+        position: relative;
+        z-index: 1000;
+        width: 90%;
+        max-width: 1600px;
+    }
+
+#email {
+    width: 706px;
+    height: 340px;
+    padding: 29px 71px 45px 39px;
+    background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/email_box.png) no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -408px;
+    margin-top: -170px;
+    padding-top: 30px;
+    z-index: 1000;
+    display: none;
+}
+
+    #email .email_close {
+        width: 47px;
+        height: 45px;
+        position: absolute;
+        right: 73px;
+        top: -27px;
+        background: url( http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/email_close.png ) no-repeat;
+        cursor: pointer;
+    }
+
+    #email p {
+        text-align: center;
+        color: #fff;
+        margin: 10px auto;
+        font-size: 20px;
+    }
+
+    #email .a-upload {
+        padding: 4px 10px;
+        height: 54px;
+        width: 580px;
+        position: relative;
+        cursor: pointer;
+        color: #888;
+        background: #313131;
+        border: none;
+        overflow: hidden;
+        display: block;
+        *display: inline;
+        *zoom: 1;
+        font-size: 30px;
+        margin: 20px auto;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    #email .email_btn {
+        width: 706px;
+        height: 81px;
+        background: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/email_btn.png) center center no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    #email .upload_btn {
+        width: 167px;
+        height: 43px;
+        display: block;
+        font-size: 20px;
+        line-height: 43px;
+        color: #333;
+        font-family: "黑体";
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        background: #eee;
+    }
+
+    #email .email_done {
+        padding: 0 10%;
+        margin-top: 50px;
+        display: none;
+    }
+
+@media screen and (max-width:1366px) {
+}
+
+@media screen and (max-width:1024px) {
+    #menu {
+        right: 1%;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+
+    #sec1 {
+        background-size: auto 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        #sec1 .sec1_p {
+            display: none;
+            width: 300%;
+        }
+
+            #sec1 .sec1_p img {
+                width: 100%;
+            }
+
+        #sec1 .sec1_tit {
+            width: 80%;
+            margin: 0;
+            position: relative;
+            transform: translate(-50%,0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #sec1 .sec1_tit img.zeorymer {
+                width: 40%;
+            }
+
+            #sec1 .sec1_tit img.X {
+                width: 50px;
+            }
+
+            #sec1 .sec1_tit img.logo {
+                width: 40%;
+                margin-top: 30px;
+            }
+
+        #sec1 .sec1_b {
+            width: 50%;
+            left: 0;
+            margin: 0 auto;
+            transform: translate(0,-100%);
+        }
+
+        #sec1 .sec1_pv {
+            margin-left: -135px;
+        }
+
+        #sec1 ul {
+            margin-top: 25px;
+            flex-direction: row;
+            height: auto;
+        }
+
+            #sec1 ul li {
+                float: none;
+                margin-bottom: 10px;
+            }
+
+        #sec1 .sec1_t {
+            width: 70%;
+        }
+
+        #sec1 .sec1_con {
+            position: static;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #sec1 .con_ewm {
+            display: none;
+        }
+
+        #sec1 .CV_list {
+            transform-origin: center;
+            text-align: center;
+        }
+
+    #sec2 {
+        background-size: auto 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        #sec2 .sec2_p {
+            width: 300%;
+            margin-left: -130%;
+        }
+
+            #sec2 .sec2_p img {
+                width: 100%;
+            }
+
+        #sec2 .sec2_tit {
+            width: 60%;
+            margin-left: 100%;
+            transform: translate(-100%);
+            position: static;
+            margin-top: 25px;
+        }
+
+            #sec2 .sec2_tit img {
+                width: 100%;
+            }
+
+        #sec2 .sec2_l {
+            width: 60%;
+            padding: 0;
+            height: auto;
+            display: block;
+            margin: 0 0 0 40%;
+            margin-top: 25px;
+            background: none;
+        }
+
+            #sec2 .sec2_l .swiper-container {
+                margin: 0;
+            }
+
+        #sec2 ul li {
+            width: 45%;
+            /*margin: 0 2.5%;*/
+        }
+
+            #sec2 ul li img {
+                width: 100%;
+            }
+
+        #sec2 .swiper-button-next, #sec2 .swiper-button-prev {
+            width: 50%;
+            height: 30px;
+            background-image: url(http://kr-website-jdzd.oss-cn-hongkong.aliyuncs.com/static/image/sec2_l_j_m.png);
+        }
+
+        #sec2 .swiper-button-next {
+            top: 100%;
+            right: 0;
+        }
+
+        #sec2 .swiper-button-prev {
+            top: 100%;
+            left: 0;
+        }
+
+        #sec2 .sec2_t {
+            width: 100%;
+            display: block;
+            margin-top: 5%;
+        }
+
+            #sec2 .sec2_t img {
+                width: 100%;
+            }
+
+            #sec2 .sec2_t a {
+                width: 4.5%;
+            }
+
+                #sec2 .sec2_t a.twtte {
+                    right: 1.3%;
+                }
+
+                #sec2 .sec2_t a.facebook {
+                    right: 7%;
+                }
+
+    #sec4 {
+        background-size: auto 100%;
+    }
+
+        #sec4 .sec3_tit {
+            width: 100%;
+            position: static;
+            margin: 25px 0;
+        }
+
+            #sec4 .sec3_tit img {
+                width: 100%;
+            }
+
+        #sec4 p {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 0 5%;
+        }
+
+    #sec2 {
+        background-size: auto 100%;
+        overflow: hidden;
+        display: block;
+    }
+
+        #sec2 .sec4_p {
+            display: none;
+            width: 300%;
+        }
+
+            #sec2 .sec4_p img {
+                width: 100%;
+            }
+
+        #sec2 .sec4_tit {
+            display: block;
+            width: 100%;
+        }
+
+            #sec2 .sec4_tit img {
+                width: 100%;
+            }
+
+        #sec2 .news_cen_list {
+            width: 90%;
+            height: auto;
+            padding: 0 5%;
+            margin: 0;
+            background: none;
+            left: 0;
+        }
+
+        #sec2 .news_list .list ul li {
+            width: 100%;
+            padding: 0;
+        }
+
+            #sec2 .news_list .list ul li:nth-child(10) {
+                display: none;
+            }
+
+            #sec2 .news_list .list ul li a {
+                font-size: 14px;
+                max-width: 70%;
+            }
+
+            #sec2 .news_list .list ul li span {
+                font-size: 12px;
+            }
+
+    #sec3 {
+        background-size: auto 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        #sec3 .tab {
+            position: static;
+            margin: 0;
+            height: auto;
+            flex-direction: row;
+        }
+
+        #sec3 .file_con {
+            width: 100%;
+            position: relative;
+            height: 100%;
+        }
+
+            #sec3 .file_con .mech, #sec3 .file_con .Pilot {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                max-width: 100%;
+            }
+
+        #sec3 .file_list .swiper-slide img.swiper-img {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 200%;
+            height: auto;
+        }
+
+        #sec3 .audio {
+            width: 100%;
+            right: auto;
+        }
+
+            #sec3 .audio img {
+                width: 50%;
+            }
+
+    #foot {
+        padding: 25px 0;
+        width: 100%;
+    }
+
+        #foot img.foot_logo {
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        #foot .swiper-box {
+            width: 100%;
+        }
+
+        #foot .swiper-slide img, #foot .swiper-slide a {
+            width: 100%;
+            display: block;
+        }
+
+    #email {
+        width: 90%;
+        padding: 0 5%;
+        margin: 0;
+        top: 50%;
+        margin-top: -170px;
+        left: 0;
+        background: #000;
+    }
+
+        #email .email_close {
+            top: 0;
+            right: 0;
+            margin: 0;
+        }
+
+        #email .a-upload {
+            width: 100%;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        #email .email_btn {
+            width: 100%;
+            margin-top: 25px;
+        }
+
+        #email p {
+            font-size: 16px;
+        }
+}
+
+@media screen and (max-width:767px) {
+    #menu {
+        display: none;
+    }
+
+    #sec1 .sec1_t {
+        width: 90%;
+    }
+
+    #sec1 .sec1_bg {
+        display: none;
+    }
+
+    #sec1 .sec1_pv {
+        background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/static/img/mobile/pv_p.png) no-repeat center center;
+        background-size: 100%;
+        margin-top: 0;
+    }
+
+        #sec1 .sec1_pv .pv {
+            display: none;
+        }
+
+    #sec1 .sec1_tit {
+        flex-direction: column;
+    }
+
+        #sec1 .sec1_tit img.zeorymer {
+            width: 100%;
+        }
+
+        #sec1 .sec1_tit img.X {
+            width: 30px;
+            margin: 0;
+        }
+
+        #sec1 .sec1_tit img.logo {
+            width: 100%;
+            margin: 0;
+        }
+
+    #sec1 .CV_list {
+        display: none;
+    }
+
+    #sec1 ul {
+        flex-direction: column;
+    }
+
+    #sec1 .sec1_btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #sec1 .CV_list img {
+        max-width: 100%;
+    }
+
+    #sec2 .sec2_bg {
+        display: none;
+    }
+
+    #sec2 .sec2_t {
+        width: 100%;
+        display: block;
+        margin-top: 15%;
+    }
+
+        #sec2 .sec2_t img {
+            width: 100%;
+        }
+
+        #sec2 .sec2_t a {
+            width: 10.3%;
+        }
+
+            #sec2 .sec2_t a.twtte {
+                right: 12.1%;
+                top: 50%;
+            }
+
+            #sec2 .sec2_t a.facebook {
+                right: 27.7%;
+                top: 50%;
+            }
+
+    #sec4 .sec3_bg {
+        display: none;
+    }
+
+    #sec2 {
+        display: block;
+    }
+
+    #sec3 .swiper-box {
+        width: 90%;
+        left: 0;
+        bottom: 5%;
+        margin: 0 5%;
+        padding: 0;
+        background: none;
+    }
+
+    #sec3 .gallery-thumbs .swiper-wrapper {
+        width: 100%;
+    }
+
+    #sec3 .swiper-box .swiper-button-prev {
+        left: 0;
+        top: -100%;
+    }
+
+    #sec3 .swiper-box .swiper-button-next {
+        right: 0;
+        top: -100%;
+    }
+
+    #sec3 .gallery-thumbs .swiper-slide {
+        background-repeat: no-repeat;
+    }
+
+    #sec3 .audio {
+        top: 60%;
+    }
+}
+
+#sec1 .language {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 110;
+}
+
+    #sec1 .language p {
+        float: left;
+        margin: 0 5px;
+    }
+
+        #sec1 .language p a {
+            color: #fff;
+            font-size: 12px;
+        }
+
+.cake_box {
+    width: 294px;
+    height: 404px;
+    position: absolute;
+    z-index: 100;
+    bottom: 20px;
+    right: 0;
+}
+
+.cake_pic {
+    display: block;
+    width: 295px;
+    height: 400px;
+    background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/jdzd_linkage/pc/static/images/2022znq/dgg.png) no-repeat center top/cover;
+}
+
+.cake_btn {
+    display: block;
+    width: 208px;
+    height: 38px;
+    background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/znq/images/cake_btn.png) no-repeat center top/cover;
+    margin: 11px auto 0;
+}
+
+.CV_list {
+    width: 90%;
+}
+
+#sec1 .language {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 110;
+}
+
+    #sec1 .language p {
+        float: left;
+        margin: 0 5px;
+    }
+
+        #sec1 .language p a {
+            color: #fff;
+            font-size: 12px;
+        }
+
+.lbt {
+    float: left;
+    margin-top: 27px;
+    width: 606px;
+    height: 195px;
+    background: url(http://static.jd.gameduchy.com/static/images_ld/1013/lbt_bg.png) no-repeat center/100% 100%;
+    position: relative;
+    margin-left: 35px;
+}
+
+.con_ewm p {
+    color: #ffffff;
+    border-left: 2px solid #6facff;
+    border-right: 2px solid #6facff;
+    font-size: 20px;
+    text-align: center;
+}
+
+#sec1 .sec1_btn .con_ewm {
+    margin-left: 58px;
+}
+
+.lbt .swiper-container {
+    width: 590px;
+    height: 170px;
+    margin-top: 17px;
+}
+
+    .lbt .swiper-container .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+.swiper-slide_1 {
+    background: url(http://static.jd.gameduchy.com/jdzd_linkage/pc/static/images/ld/1.jpg) no-repeat center/cover;
+}
+
+.swiper-slide_2 {
+    background: url(http://static.jd.gameduchy.com/jdzd_linkage/pc/static/images/ld/2.jpg) no-repeat center/cover;
+}
+
+.swiper-slide_3 {
+    background: url(http://static.jd.gameduchy.com/static/images_ld/0301/15.jpg) no-repeat center/cover;
+}
+
+
+
+
+#sec3 .Pilot .gallery-thumbs .swiper-slide:nth-of-type(1) {
+    background-image: url(http://static.jd.gameduchy.com/static/img/index/file/pliots/list/pliots1.png);
+}
+
+#sec3 .Pilot .gallery-thumbs .swiper-slide:nth-of-type(2) {
+    background-image: url(http://static.jd.gameduchy.com/static/img/index/file/pliots/list/pliots2.png);
+}
+
+#sec3 .Pilot .gallery-thumbs .swiper-slide:nth-of-type(3) {
+    background-image: url(http://static.jd.gameduchy.com/static/img/index/file/pliots/list/pliots3.png);
+}
+
+#sec3 .Pilot .gallery-thumbs .swiper-slide:nth-of-type(4) {
+    background-image: url(http://static.jd.gameduchy.com/static/img/index/file/pliots/list/pliots5.png);
+}
+
+#sec3 .Pilot .gallery-thumbs .swiper-slide:nth-of-type(5) {
+    background-image: url(http://static.jd.gameduchy.com/static/img/index/file/pliots/list/pliots7.png);
+}
+
+#sec3 .Pilot .gallery-thumbs .swiper-slide:nth-of-type(6) {
+    background-image: url(http://static.jd.gameduchy.com/static/img/index/file/pliots/list/pliots8.png);
+}
+
+#sec3 .Pilot .gallery-thumbs .swiper-slide:nth-of-type(7) {
+    background-image: url(http://static.jd.gameduchy.com/static/img/index/file/pliots/list/pliots9.png);
+}
+
+#sec3 .Pilot .gallery-thumbs .swiper-slide:nth-of-type(8) {
+    background-image: url(http://static.jd.gameduchy.com/static/img/index/file/pliots/list/pliots10.png);
+}
+
+#sec3 .Pilot .gallery-thumbs .swiper-slide:nth-of-type(9) {
+    background-image: url(http://static.jd.gameduchy.com/static/img/index/file/pliots/list/pliots13.png);
+}
+
+.sl_16 {
+    display: inline-block;
+    width: 142px;
+    height: 178px;
+    margin-top: 49px;
+    background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/static/cbl/images/sl_16.png) no-repeat center top/cover;
+    float: left;
+}
+
+.zz_sl {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.sl_16_close {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(http://website-jdzd.oss-cn-hangzhou.aliyuncs.com/static/cbl/images/video_close.png) no-repeat center top/cover;
+    position: absolute;
+    top: 25%;
+    right: 18%;
+    z-index: 999;
+}
+
+.sl_16_zz {
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+    .sl_16_zz h2 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .sl_16_zz p {
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
